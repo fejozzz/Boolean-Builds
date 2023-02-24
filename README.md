@@ -1,2 +1,2 @@
 # Boolean-Builds
-projects built from Boolean boothcamp
+projects built from Boolean bootcamp
