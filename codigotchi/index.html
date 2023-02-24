@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- LINKS & ICON -->
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <link rel="icon" href="images/icon.png" />
+
+    <title>Codigotchi</title>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.png" alt="logo" />
+      </header>
+
+      <main>
+        <section class="codigotchi">
+          <img src="images/codigotchi.png" alt="codagotchi" />
+          <div id="screen" class="codigotchi-screen"></div>
+        </section>
+
+        <section id="panels-data" class="panels">
+          <!-- mic controls -->
+          <div class="panel panel-microphone">
+            <button id="microphone">
+              <img src="images/mic.png" alt="mic" />
+            </button>
+            <h2>Activate microphone</h2>
+          </div>
+
+          <!-- voice controls -->
+          <div class="panel panel-commands" >
+            <h2>speak a command</h2>
+            <h3>Supported commands</h3>
+
+            <div class="commands">
+              <ul>
+                <li>Eat</li>
+                <li>Dance</li>
+                <li>Sleep</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <p id="transcript"></p>
+
+    </div>
+  </body>
+</html>

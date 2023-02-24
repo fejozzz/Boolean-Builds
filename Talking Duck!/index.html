@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <title>Talking Duck</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <img src="images/logo.png" alt="logo" />
+      </header>
+
+      <main>
+        <!-- TEXT AREA/INPUT -->
+        <textarea placeholder="write something here..."></textarea>
+
+        <!-- CONTROLS/PITCH -->
+        <div class="controls">
+          <button>
+            <img src="images/play.png" alt="play button" />
+          </button>
+
+          <div class="pitch-controls">
+            <label> Pitch</label>
+            <input id="pitch-range" type="range" min="0.1" max="2" step="0.1" value="1" />
+          </div>
+        </div>
+
+        <!-- DUCKS! -->
+        <figure>
+          <img class="static-duck" src="images/talking-duck-static.png" alt="" />
+          <img hidden class="animated-duck" src="images/talking-duck-animated.gif" alt="" />
+        </figure>
+      </main>
+    </div>
+  </body>
+</html>
